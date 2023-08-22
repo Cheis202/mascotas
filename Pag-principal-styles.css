@@ -1,0 +1,84 @@
+/* MAIN */
+
+/* TEXT */
+main{
+    display: flex;
+    flex-direction: column;
+}
+.contenedor__inicio{
+    width: 100%;
+    height: 500px;
+    background:var(--beige);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.inicio__titulo{
+    font-size: 3em;
+    letter-spacing: 3px;
+    -webkit-text-stroke: .5px var(--dark);
+    color: var(--violet);
+}
+.inicio__desc{
+    width: 60%;
+    font-size: 1em;
+    color: var(--pink);
+    line-height: 2em;
+    letter-spacing: 1.5px;
+}
+
+/* SECCION MASCOTAS */
+
+.contenedor__mascotas{
+    background: var(--board);
+    width: 100%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor__mascotas__card{
+    border-top: 2px solid var(--orange);
+    border-bottom: 2px solid var(--orange);
+    height: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.mascota__card{
+    border: 1.5px solid var(--dark);
+    background: var(--orange);
+    border-radius: 10px;
+    width: 180px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.mascota__img{
+    border: 1.5px solid var(--dark);
+    width: 120px;
+    height: 140px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.mascota__nombre{
+    font-size: 1.2em;
+    color: var(--dark);
+    letter-spacing: 1px;
+}
+.mascota__personalidad{
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: var(--green);
+}
+.mascota__link{
+    font-size: 10px;
+    color: var(--lightGreen);
+}

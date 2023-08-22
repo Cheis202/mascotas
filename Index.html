@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./public/Shared-styles.css">
+    <link rel="stylesheet" href="Pag-principal-styles.css">
     <title>Examen Nivel 1</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +16,7 @@
     <header>
         <nav class="nav">
             <div class="container-brand">
-                <img src="logo-brand.png" alt="brand">
+                <img class="brand" src="./public/logo-brand.png" alt="brand">
             </div>
             <ul class="navegacion">
                 <li><a href="#Inicio">INICIO</a></li>
@@ -26,54 +27,58 @@
         </nav>
     </header>
     <!-- MAIN -->
-    <main class="main-flex">
-        <div id="Inicio" class="inicio-desc">
-            <h1>MIS MASCOTAS</h1>
-            <p>Este proyecto es una parte de mi examen de nivel uno de la tecnicatura pero no queria que fuese solo eso, asi que se me ocurrio que era buena idea dedicarlo a mis mascotas.</p>
+    <main>
+        <div id="Inicio" class="contenedor__inicio">
+            <h1 class="inicio__titulo">MIS MASCOTAS</h1>
+            <p class="inicio__desc">Este proyecto es una parte de mi examen de nivel uno de la tecnicatura pero no queria que fuese solo eso, asi que se me ocurrio que era buena idea dedicarlo a mis mascotas.</p>
         </div>
-        <section id="Mascotas" class="seccion-mascotas">
-            <article class="container-mascotas">
-                <article class="mascotas">
-                    <img src="roco-card.jpg" alt="Roco">
-                    <h1>Roco</h1>
-                    <a href="./Mascotas/Roco/roco.html">saber mas</a>
+        <section id="Mascotas" class="contenedor__mascotas">
+            <article class="contenedor__mascotas__card">
+                <article class="mascota__card">
+                    <img class="mascota__img" src="./pag__principal__img/roco-card.jpg" alt="Roco">
+                    <h1 class="mascota__nombre">ROCO</h1>
+                    <h2 class="mascota__personalidad">"El viejo cascarrabia"</h2>
+                    <a class="mascota__link" href="./Mascotas/Roco/roco.html">Saber mas</a>
                 </article>
-                <article class="mascotas">
-                    <img src="negro-card.jpg" alt="Negro">
-                    <h1>Negro</h1>
-                    <p>12 AÑOS</p>
+                <article class="mascota__card">
+                    <img class="mascota__img" src="./pag__principal__img/negro-card.jpg" alt="Negro">
+                    <h1 class="mascota__nombre">NEGRO</h1>
+                    <h2 class="mascota__personalidad">"El caprichoso"</h2>
+                    <a class="mascota__link" href="./Mascotas/Negro/negro.html">Saber mas</a>
                 </article>
-                <article class="mascotas">
-                    <img src="cookie-card.jpg" alt="Cookie">
-                    <h1>Cookie</h1>
-                    <p>3 AÑOS</p>
+                <article class="mascota__card">
+                    <img class="mascota__img" src="./pag__principal__img/cookie-card.jpg" alt="Cookie">
+                    <h1 class="mascota__nombre">COOKIE</h1>
+                    <h2 class="mascota__personalidad">"La toxica"</h2>
+                    <a class="mascota__link"  href="./Mascotas/Cookie/cookie.html">Saber mas</a>
                 </article>
             </article>
         </section>
-        <article id="Dueño" class="seccion-dueño">
-            <article class="container-dueño">
-                <img src="yo-card.jpeg" alt="Yo">
-                <article class="dueño-text">
-                    <h1>Leonel Trejo</h1>
-                    <p>Soy el dueño de esas tres bestias</p>
+        <article id="Dueño" class="contenedor__dueño">
+            <article class="dueño__carta">
+                <img class="dueño__img" src="./public/yo-card.jpeg" alt="Yo">
+                <article class="dueño__texto">
+                    <h1 class="texto__nombre">LEONEL TREJO</h1>
+                    <p class="texto__desc">Soy el dueño de esas tres bestias</p>
+                    <a class="texto__link" href="">Acerca de mi</a>
                 </article>
             </article>
         </article>
     </main>
     <!-- FOOTER -->
-    <footer id="Contacto" class="footer-content">
-        <article class="footer-links">
+    <footer id="Contacto" class="footer">
+        <div class="footer__contenedor__links">
             <a href="https://www.facebook.com/profile.php?id=100095094614906">
-                <i class="fa-brands fa-square-facebook"></i>
+                <i class="links fa-brands fa-square-facebook"></i>
             </a>
             <a href="https://instagram.com/gocode.ar">
-                <i class="fa-brands fa-square-instagram"></i>
+                <i class="links fa-brands fa-square-instagram"></i>
             </a>
-            <a href="https://gocode.ar/">
-                <i class="fa-solid fa-globe"></i>
+            <a  href="https://gocode.ar/">
+                <i class="links fa-solid fa-globe"></i>
             </a>
-        </article>
-        <p>Examen Nivel 1 - Go Code</p>
+        </div>
+        <p class="footer__copyright">Examen Nivel 1 - Go Code</p>
     </footer>
 </body>
 </html>
