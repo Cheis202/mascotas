@@ -3,21 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Examen Nivel 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/11d0ee9261.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- HEADER -->
     <header>
-        <nav>
-            <ul>
-                <li>Inicio</li>
-                <li>Informacion</li>
-                <li>Contacto</li>
-                <li>Nosotros</li>
-                <li>Extra</li>
+        <nav class="nav">
+            <div class="container-brand">
+                <img src="logo-brand.png" alt="brand">
+            </div>
+            <ul class="navegacion">
+                <li><a href="#Inicio">INICIO</a></li>
+                <li><a href="#Mascotas">MASCOTAS</a></li>
+                <li><a href="#Dueño">DUEÑO</a></li>
+                <li><a href="#Contacto">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <!-- MAIN -->
+    <main class="main-flex">
+        <div id="Inicio" class="inicio-desc">
+            <h1>MIS MASCOTAS</h1>
+            <p>Este proyecto es una parte de mi examen de nivel uno de la tecnicatura pero no queria que fuese solo eso, asi que se me ocurrio que era buena idea dedicarlo a mis mascotas.</p>
+        </div>
+        <section id="Mascotas" class="seccion-mascotas">
+            <article class="container-mascotas">
+                <article class="mascotas">
+                    <img src="roco-card.jpg" alt="Roco">
+                    <h1>Roco</h1>
+                    <a href="./Mascotas/Roco/roco.html">saber mas</a>
+                </article>
+                <article class="mascotas">
+                    <img src="negro-card.jpg" alt="Negro">
+                    <h1>Negro</h1>
+                    <p>12 AÑOS</p>
+                </article>
+                <article class="mascotas">
+                    <img src="cookie-card.jpg" alt="Cookie">
+                    <h1>Cookie</h1>
+                    <p>3 AÑOS</p>
+                </article>
+            </article>
+        </section>
+        <article id="Dueño" class="seccion-dueño">
+            <article class="container-dueño">
+                <img src="yo-card.jpeg" alt="Yo">
+                <article class="dueño-text">
+                    <h1>Leonel Trejo</h1>
+                    <p>Soy el dueño de esas tres bestias</p>
+                </article>
+            </article>
+        </article>
+    </main>
+    <!-- FOOTER -->
+    <footer id="Contacto" class="footer-content">
+        <article class="footer-links">
+            <a href="https://www.facebook.com/profile.php?id=100095094614906">
+                <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="https://instagram.com/gocode.ar">
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
+            <a href="https://gocode.ar/">
+                <i class="fa-solid fa-globe"></i>
+            </a>
+        </article>
+        <p>Examen Nivel 1 - Go Code</p>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,182 @@
+/* PAGINA PRINCIPAL CSS */
+*{
+    font-family: 'Alfa Slab One', cursive;  
+}
+body{
+    margin: 0;
+}
+
+/* TOP */
+header{
+    background: #DAC0A3;
+    position: fixed;
+    width: 100%;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    
+}
+.container-brand{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+}
+.container-brand img{
+    width: 60px;
+    height: 40px;
+}
+.navegacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    list-style: none;
+    
+}
+.navegacion li{
+    width: 100px;
+    text-align: center;
+}
+.navegacion a{
+    text-decoration: none;
+    color: #445069;
+    font-size: .8em;
+    transition: .5s;
+    letter-spacing: 1.5px;
+}
+.navegacion a:hover{
+    color: #102C57;
+    font-size: .9em;
+}
+
+/* MAIN */
+
+/* TEXT */
+.main-flex{
+    display: flex;
+    flex-direction: column;
+}
+.inicio-desc{
+    width: 100%;
+    height: 500px;
+    background:#102C57 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.inicio-desc h1{
+    font-size: 3em;
+    letter-spacing: 3px;
+    color: #4477CE;
+}
+.inicio-desc p{
+    width: 60%;
+    font-size: 1em;
+    color: #F8F0E5;
+    line-height: 2em;
+    letter-spacing: 1.5px;
+}
+
+/* SECCION MASCOTAS */
+
+.seccion-mascotas{
+    background: #EADBC8;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-mascotas{
+    height: 350px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.mascotas{
+    background: #F8F0E5;
+    width: 180px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.mascotas img{
+    width: 120px;
+    height: 140px;
+}
+.mascotas h1{
+    font-size: 1em;
+    color: #102C57;
+}
+
+
+/* SECCION DUEÑO */
+.seccion-dueño{
+    background: #102C57;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-dueño{
+    display: flex;
+    flex-direction: row;
+    height: 180px;
+    width: 300px;
+    justify-content: space-around;
+    align-items: center;
+    background: #4477CE;
+}
+.container-dueño img{
+    width: 120px;
+    height: 140px;
+}
+.dueño-text{
+    width: 120px;
+    color: #F8F0E5 ;
+    letter-spacing: 2px;
+}
+.dueño-text h1{
+    font-size: 14px;
+}
+.dueño-text p{
+    font-size: 12px;
+}
+
+/* FOOTER */
+
+.footer-content{
+    width: 100%;
+    height: 100px;
+    background: #252B48;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer-links{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 150px;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-content p{
+    width: 150px;
+    height: 20px;
+    font-size: 8px;
+    text-align: center;
+}
