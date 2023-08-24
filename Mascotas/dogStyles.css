@@ -43,18 +43,18 @@
 .viaje{
     width: 100%;
     height: 50px;
-    background: var(--orange);
+    background: var(--dark);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .viaje__text{
-    color: var(--dark);
+    color: var(--gray);
     letter-spacing: 2px;
     font-size: 10px;
 }
 .viaje__nombres{
-    color: var(--dark);
+    color: var(--gray);
     letter-spacing: 2px;
     font-size: 12px;
     width: 80px;
@@ -72,6 +72,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 20px;
 }
 .info__contenedor__titulo{
     display: flex;
@@ -84,9 +85,9 @@
     font-size: 25px;
     color: var(--beige);
     letter-spacing: 2px;
-    -webkit-text-stroke: .5px var(--dark);
+    -webkit-text-stroke: 1px var(--dark);
 }
-.info__apodo{
+.info__personalidad{
     margin-left: 10px;
     font-size: 20px;
     letter-spacing: 1px;
@@ -98,7 +99,12 @@
 }
 .info__subtitulo{
     font-size: 20px;
+    color: var(--orange);
+    letter-spacing: 2px;
+    border-bottom: 1px solid var(--beige);
 }
 .info__text{
     font-size: 16px;
+    letter-spacing: .5px;
+    color: var(--beige);
 }

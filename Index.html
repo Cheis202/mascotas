@@ -23,20 +23,31 @@
                 <img class="brand" src="./public/logo-brand.png" alt="brand">
             </div>
             <ul class="navegacion">
-                <li><a href="#Inicio">INICIO</a></li>
-                <li><a href="#Mascotas">MASCOTAS</a></li>
-                <li><a href="#Dueño">DUEÑO</a></li>
-                <li><a href="#Contacto">CONTACTO</a></li>
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#mascotas">MASCOTAS</a></li>
+                <li><a href="#dueño">DUEÑO</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
     <!-- MAIN -->
     <main>
-        <div id="Inicio" class="contenedor__inicio">
-            <h1 class="inicio__titulo animate__animated animate__backInLeft">MIS MASCOTAS</h1>
-            <p class="inicio__desc  animate__animated animate__backInRight">Este proyecto es una parte de mi examen de nivel uno de la tecnicatura pero no queria que fuese solo eso, asi que se me ocurrio que era buena idea dedicarlo a mis mascotas.</p>
+        <div class="presentacion">
+            <h1 class="presentacion__titulo animate__animated animate__backInLeft">MIS MASCOTAS</h1>
+            <p class="presentacion__desc  animate__animated animate__backInRight">Este proyecto es una parte de mi examen de nivel uno de la tecnicatura pero no queria que fuese solo eso, asi que se me ocurrio que era buena idea dedicarlo a mis mascotas.</p>
         </div>
-        <section id="Mascotas" class="contenedor__mascotas">
+        <div id="inicio" class="contenedor__inicio">
+            <video class="inicio__video__izquierda" autoplay loop muted>
+                <source src="./video1.mp4" type="video/mp4">
+            </video>
+            <video class="inicio__video__centro" autoplay loop muted>
+                <source src="./video2.mp4" type="video/mp4">
+            </video>
+            <video class="inicio__video__derecha" autoplay loop muted>
+                <source src="./video3.mp4" type="video/mp4">
+            </video>
+        </div>
+        <section id="mascotas" class="contenedor__mascotas">
             <article class="contenedor__mascotas__card">
                 <article class="mascota__card">
                     <img class="mascota__img" src="./pag__principal__img/roco-card.jpg" alt="Roco">
@@ -58,9 +69,9 @@
                 </article>
             </article>
         </section>
-        <article id="Dueño" class="contenedor__dueño">
+        <article id="dueño" class="contenedor__dueño">
             <article class="dueño__carta">
-                <img class="dueño__img" src="./public/yo-card.jpeg" alt="Yo">
+                <img class="dueño__img" src="./public/yo-card.jpg" alt="Yo">
                 <article class="dueño__texto">
                     <h1 class="texto__nombre">LEONEL TREJO</h1>
                     <p class="texto__desc">Soy el dueño de esas tres bestias</p>
@@ -70,7 +81,7 @@
         </article>
     </main>
     <!-- FOOTER -->
-    <footer id="Contacto" class="footer">
+    <footer id="contacto" class="footer">
         <div class="footer__contenedor__links">
             <a href="https://www.facebook.com/profile.php?id=100095094614906">
                 <i class="links fa-brands fa-square-facebook"></i>
