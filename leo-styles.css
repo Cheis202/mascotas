@@ -1,0 +1,70 @@
+.carousel-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+.carousel {
+    width: 400px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    width: 500%;
+    position: relative;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .slide {
+    flex: 1 0 20%;
+    min-width: 20%;
+    height: 400px;
+    background-size: cover;
+  }
+
+  .carousel-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .carousel-button {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+  }
+
+  .carousel-button-left {
+    margin-right: auto;
+  }
+
+  .carousel-button-right {
+    margin-left: auto;
+  }
+
+
+
+  @keyframes slide {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    20%, 120% {
+      transform: translateX(-100%);
+    }
+    40%, 140% {
+      transform: translateX(-200%);
+    }
+    60%, 160% {
+      transform: translateX(-300%);
+    }
+    80%, 180% {
+      transform: translateX(-400%);
+    }
+  }

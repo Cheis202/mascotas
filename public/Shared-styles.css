@@ -1,0 +1,166 @@
+/*  CSS COMPARTIDO */
+*{
+    font-family: 'Alfa Slab One', cursive;  
+}
+:root{
+    --dark:#040D12;
+    --red:#BB2525;
+    --beige:#FFF5E0;
+    --orange:#FFBA86;
+    --yellow:#EBE76C;
+    --violet:#79155B;
+    --board:#B31312;
+    --pink:#C23373;
+    --green:#183D3D;
+    --gray:#9DB2BF;
+    --blue:#116D6E;
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: var(--orange);
+    border-radius: 20px;
+    border: 2px solid var(--dark);
+}
+body::-webkit-scrollbar-track{
+    background:var(--dark);
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+header{
+    background: var(--dark);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+}
+.container-brand{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.brand{
+    width: 60px;
+    height: 45px;
+}
+.navegacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    list-style: none;
+}
+.navegacion li{
+    width: 100px;
+    text-align: center;
+}
+.navegacion a{
+    text-decoration: none;
+    color: var(--orange);
+    font-size: .8em;
+    transition: .5s;
+    letter-spacing: 1.5px;
+}
+.navegacion a:hover{
+    color: var(--beige);
+    font-size: .9em;
+}
+
+
+/* Seccion Dueño */
+.contenedor__dueño{
+    background: var(--gray);
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dueño__carta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    width: 300px;
+    border-radius: 10px;
+    background: var(--beige);
+}
+.dueño__img{
+    width: 80px;
+    height: 90px;
+    border-radius: 10px;
+}
+.dueño__texto{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 140px;
+    letter-spacing: 2px;
+}
+.texto__nombre{
+    font-size: 10px;
+    color: var(--dark);
+    margin: 0;
+}
+.texto__desc{
+    color: var(--green);
+    font-size: 8px;
+}
+.texto__link{
+    color: var(--red);
+    font-size: 6px;
+}
+
+/* FOOTER */
+
+.footer{
+    width: 100%;
+    height: 100px;
+    background: var(--dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer__contenedor__links{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 150px;
+    justify-content: space-around;
+    align-items: center;
+}
+.links{
+    font-size: 20px;
+    color: var(--orange);
+    transition: .3s;
+}
+.links:hover{
+    color:var(--beige);
+}
+.footer__copyright{
+    height: 20px;
+    font-size: 6px;
+    text-align: center;
+    color: var(--orange);
+    letter-spacing: 1.5px
+}
