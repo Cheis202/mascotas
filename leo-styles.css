@@ -32,6 +32,7 @@
   left: 0;
   position:sticky;
   object-fit: cover;
+  margin-bottom: 5px;
   border-radius: 5px;
   scroll-snap-align: center;
 }
