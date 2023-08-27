@@ -38,43 +38,25 @@
         </div>
         <div class="carousel-container">
             <div class="carousel">
-                <div class="carousel-controls">
-                  <button class="carousel-button carousel-button-left" onclick="prevSlide()">Anterior</button>
-                  <div class="carousel-inner">
-                    <div class="slide" style="background-image: url('./Mascotas/Roco/roco-leo1.jpeg');"></div>
-                    <div class="slide" style="background-image: url('./Mascotas/Roco/roco-leo2.jpeg');"></div>
-                    <div class="slide" style="background-image: url('./Mascotas/Roco/roco-leo3.jpeg');"></div>
-                    <div class="slide" style="background-image: url('./Mascotas/Roco/roco-leo4.jpeg');"></div>
-                    <div class="slide" style="background-image: url('./Mascotas/Roco/roco-leo5.jpeg');"></div>
-                  </div>
-                  <button class="carousel-button carousel-button-right" onclick="nextSlide()">Siguiente</button>
-                </div>
+                <img class="slide" src="./Mascotas/Roco/roco-leo1.jpeg"></img>
+                <img class="slide" src="./Mascotas/Roco/roco-leo2.jpeg"></img>
+                <img class="slide" src="./Mascotas/Roco/roco-leo3.jpeg"></img>
+                <img class="slide" src="./Mascotas/Roco/roco-leo4.jpeg"></img>
+                <img class="slide" src="./Mascotas/Roco/roco-leo5.jpeg"></img>
             </div>
             <div class="carousel">
-                <div class="carousel-controls">
-                    <button class="carousel-button carousel-button-left" onclick="prevSlide()">Anterior</button>
-                    <div class="carousel-inner">
-                      <div class="slide" style="background-image: url(./Mascotas/Negro/negro-leo1.jpeg);"></div>
-                      <div class="slide" style="background-image: url(./Mascotas/Negro/negro-leo2.jpeg);"></div>
-                      <div class="slide" style="background-image: url(./Mascotas/Negro/negro-leo3.jpeg);"></div>
-                      <div class="slide" style="background-image: url(./Mascotas/Negro/negro-leo4.jpeg);"></div>
-                      <div class="slide" style="background-image: url(./Mascotas/Negro/negro-leo5.jpeg);"></div>
-                    </div>
-                    <button class="carousel-button carousel-button-right" onclick="nextSlide()">Siguiente</button>
-                  </div>
+                <img class="slide" src="./Mascotas/Negro/negro-leo1.jpeg"></img>
+                <img class="slide" src="./Mascotas/Negro/negro-leo2.jpeg"></img>
+                <img class="slide" src="./Mascotas/Negro/negro-leo3.jpeg"></img>
+                <img class="slide" src="./Mascotas/Negro/negro-leo4.jpeg"></img>
+                <img class="slide" src="./Mascotas/Negro/negro-leo5.jpeg"></img>
             </div>
             <div class="carousel">
-                <div class="carousel-controls">
-                  <button class="carousel-button carousel-button-left" onclick="prevSlide()">Anterior</button>
-                  <div class="carousel-inner">
-                    <div class="slide" style="background-image: url(./Mascotas/Cookie/cookie-leo1.jpeg);"></div>
-                    <div class="slide" style="background-image: url(./Mascotas/Cookie/cookie-leo2.jpeg);"></div>
-                    <div class="slide" style="background-image: url(./Mascotas/Cookie/cookie-leo3.jpeg);"></div>
-                    <div class="slide" style="background-image: url(./Mascotas/Cookie/cookie-leo4.jpeg);"></div>
-                    <div class="slide" style="background-image: url(./Mascotas/Cookie/cookie-leo5.jpeg);"></div>
-                  </div>
-                  <button class="carousel-button carousel-button-right" onclick="nextSlide()">Siguiente</button>
-                </div>
+                <img class="slide" src="./Mascotas/Cookie/cookie-leo1.jpeg" ></img>
+                <img class="slide" src="./Mascotas/Cookie/cookie-leo2.jpeg" ></img>
+                <img class="slide" src="./Mascotas/Cookie/cookie-leo3.jpeg" ></img>
+                <img class="slide" src="./Mascotas/Cookie/cookie-leo4.jpeg" ></img>
+                <img class="slide" src="./Mascotas/Cookie/cookie-leo5.jpeg" ></img>
             </div>
         </div>
         
@@ -116,35 +98,5 @@
         </div>
         <p class="footer__copyright">Examen Nivel 1 - Go Code</p>
     </footer>
-
-
-
-
-    <script>
-        const slides = document.querySelectorAll('.slide');
-        let slideIndex = 0;
-      
-        function showSlide(index) {
-          const offset = index * -100;
-          document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
-        }
-      
-        function prevSlide() {
-          slideIndex = (slideIndex - 1 + slides.length) % slides.length;
-          showSlide(slideIndex);
-        }
-      
-        function nextSlide() {
-          slideIndex = (slideIndex + 1) % slides.length;
-          showSlide(slideIndex);
-        }
-      
-        function startCarousel() {
-          setInterval(nextSlide, 3000); // Cambiar la imagen cada 3 segundos
-        }
-      
-        showSlide(slideIndex);
-        startCarousel();
-      </script>
 </body>
 </html>

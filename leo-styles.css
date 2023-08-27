@@ -1,70 +1,37 @@
 .carousel-container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    min-height: 100vh;
-    background-color: #f0f0f0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--dark);
+  
+  border-bottom: 3px solid var(--gray);
 }
-.carousel {
-    width: 400px;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .carousel-inner {
-    display: flex;
-    width: 500%;
-    position: relative;
-    transition: transform 0.4s ease-in-out;
-  }
-  
-  .slide {
-    flex: 1 0 20%;
-    min-width: 20%;
-    height: 400px;
-    background-size: cover;
-  }
-
-  .carousel-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-
-  .carousel-button {
-    cursor: pointer;
-    padding: 5px 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-  }
-
-  .carousel-button-left {
-    margin-right: auto;
-  }
-
-  .carousel-button-right {
-    margin-left: auto;
-  }
-
-
-
-  @keyframes slide {
-    0%, 100% {
-      transform: translateX(0);
-    }
-    20%, 120% {
-      transform: translateX(-100%);
-    }
-    40%, 140% {
-      transform: translateX(-200%);
-    }
-    60%, 160% {
-      transform: translateX(-300%);
-    }
-    80%, 180% {
-      transform: translateX(-400%);
-    }
-  }
+.carousel{
+  aspect-ratio: 3/16;
+  width: 200px;
+  height: 400px;
+  position: relative;
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+.carousel::-webkit-scrollbar{
+  width: 10px;
+}
+.carousel::-webkit-scrollbar-thumb{
+  background-color: var(--orange);
+  border-radius: 20px;
+}
+.carousel::-webkit-scrollbar-track{
+  background:transparent;
+}
+.slide{
+  width: 100%;
+  left: 0;
+  position:sticky;
+  object-fit: cover;
+  border-radius: 5px;
+  scroll-snap-align: center;
+}
