@@ -1,16 +1,17 @@
 ## Examen Nivel 1 - Go Code
+#### Examen para rendir nivel 1 de la tecnicatura de Go Code.
 
 ------------
 
-
-###:tw-1f436:[*Vista Previa* : https://examen-gocode-lt.netlify.app/ ]  :tw-1f436:
+###  [*Vista Previa* : https://examen-gocode-lt.netlify.app/ ] 
 
 ------------
 
-#####Examen para rendir nivel 1 de la tecnicatura de Go Code
 <p>
-	Tecnologias utilizadas para la realizacion de este examen:
+Tecnologias utilizadas para la realizacion de este examen:
 </p>
-- HTML
-- CSS
-- GIT
+<ul>
+	<li>HTML</li>
+	<li>CSS</li>
+	<li>GIT</li>
+</ul>
