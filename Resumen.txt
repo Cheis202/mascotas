@@ -1,0 +1,2 @@
+Hola soy Leonel Trejo, lo que van a ver a continuacion es un proyecto para rendir el nivel 1 de la tecnicatura en desarrollo web full stack de Go Code, 
+en el cual uso HTML y CSS para mostrar contenido de mis mascotas y su historia. Espero sea de su agrado, muchas gracias.
