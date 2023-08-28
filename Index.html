@@ -50,24 +50,31 @@
         </div>
         <!-- Mascotas -->
         <section id="mascotas" class="contenedor__mascotas">
+            <div class="contenedor__filtro">
+                <button class="filtro" id="perros-btn">PERROS</button>
+                <button class="filtro" id="gatos-btn">GATOS</button>
+            </div>
             <article class="contenedor__mascotas__card">
-                <article class="mascota__card">
+                <article class="mascota__card perro" >
                     <img class="mascota__img" src="./pag__principal__assets/roco-card.jpg" alt="Roco">
                     <h1 class="mascota__nombre">ROCO</h1>
                     <h2 class="mascota__personalidad">"El viejo cascarrabia"</h2>
                     <a class="mascota__link" href="./Mascotas/Roco/roco.html">Saber mas</a>
                 </article>
-                <article class="mascota__card">
+                <article class="mascota__card perro" >
                     <img class="mascota__img" src="./pag__principal__assets/negro-card.jpg" alt="Negro">
                     <h1 class="mascota__nombre">NEGRO</h1>
                     <h2 class="mascota__personalidad">"El caprichoso"</h2>
                     <a class="mascota__link" href="./Mascotas/Negro/negro.html">Saber mas</a>
                 </article>
-                <article class="mascota__card">
+                <article class="mascota__card perro" >
                     <img class="mascota__img" src="./pag__principal__assets/cookie-card.jpg" alt="Cookie">
                     <h1 class="mascota__nombre">COOKIE</h1>
                     <h2 class="mascota__personalidad">"La toxica"</h2>
                     <a class="mascota__link"  href="./Mascotas/Cookie/cookie.html">Saber mas</a>
+                </article>
+                <article class="gato">
+                    <h1>La categoria de gatos todavia no esta disponible</h1>
                 </article>
             </article>
         </section>
@@ -109,5 +116,21 @@
         </div>
         <p class="footer__copyright">Examen Nivel 1 - Go Code</p>
     </footer>
+    <script>
+        const perrosBtn = document.getElementById('perros-btn');
+        const gatosBtn = document.getElementById('gatos-btn');
+        const perroCards = document.querySelectorAll('.perro');
+        const gatoCards = document.querySelectorAll('.gato');
+    
+        perrosBtn.addEventListener('click', () => {
+            perroCards.forEach(card => card.style.display = 'flex');
+            gatoCards.forEach(card => card.style.display = 'none');
+        });
+    
+        gatosBtn.addEventListener('click', () => {
+            gatoCards.forEach(card => card.style.display = 'flex');
+            perroCards.forEach(card => card.style.display = 'none');
+        });
+    </script>
 </body>
 </html>

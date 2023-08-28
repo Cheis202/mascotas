@@ -60,13 +60,36 @@
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 }
+.contenedor__filtro{
+    width: 25%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--dark);
+    border-radius: 10px;
+}
+.filtro{
+    background: var(--blue);
+    color: var(--orange);
+    border-radius: 10px;
+    border: none;
+    transition:.5s;
+    width: 100px;
+    height: 30px;
+}
+.filtro:hover{
+    color: var(--beige);
+}
+.filtro:active{
+    border: 1px solid var(--orange);
+}
 .contenedor__mascotas__card{
-    border-top: 2px solid var(--dark);
-    border-bottom: 2px solid var(--dark);
     height: 450px;
     width: 100%;
     display: flex;
@@ -137,3 +160,10 @@
         transform: translateY(0);
     }
 }
+.gato{
+    display: none;
+    color: var(--beige);
+    letter-spacing: 2px;
+}
+
+
